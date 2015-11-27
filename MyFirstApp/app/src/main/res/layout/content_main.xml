@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AppTitleLabel"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <Button
+        style="@style/GenericAppLauncherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FirstAppButtonText"
+        android:id="@+id/button"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:onClick="FirstAppLauncher"/>
+
+    <Button
+        style="@style/GenericAppLauncherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SecondAppButtonText"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/button"
+        android:onClick="SecondAppLauncher"/>
+
+    <Button
+        style="@style/GenericAppLauncherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ThirdAppButtonText"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/button2"
+        android:onClick="ThirdAppLauncher"/>
+
+    <Button
+        style="@style/GenericAppLauncherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FourthAppButtonText"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/button3"
+        android:onClick="FourthAppLauncher"/>
+
+    <Button
+        style="@style/GenericAppLauncherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FifthAppButtonText"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/button4"
+        android:onClick="FifthAppLauncher"/>
+
+    <Button
+        style="@style/CustomAppLauncherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MyAppButtonText"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@+id/button5"
+        android:onClick="CustomAppLauncher"/>
+
+</RelativeLayout>
